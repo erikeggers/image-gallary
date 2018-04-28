@@ -1,0 +1,113 @@
+html {
+  font-family: Futura, Georgia;
+  line-height: 0; }
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.globe {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0 0 40px; }
+  @media (max-width: 895px) {
+    .globe {
+      padding: 10px 0 0 60px; } }
+
+header img {
+  width: 60px;
+  padding: 0;
+  animation: spin 5s linear infinite;
+  animation-play-state: paused; }
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  padding: 30px; }
+
+ul {
+  margin: 0 auto;
+  width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none; }
+  @media (max-width: 895px) {
+    ul {
+      width: 680px; } }
+  @media (max-width: 720px) {
+    ul {
+      width: 400px; } }
+
+li {
+  position: relative;
+  padding: 20px 20px 80px 20px;
+  width: 380px;
+  height: 180px;
+  display: inline-block;
+  overflow: hidden; }
+  @media (max-width: 895px) {
+    li {
+      width: 300px;
+      height: 80px; } }
+  @media (max-width: 720px) {
+    li {
+      width: 80%;
+      height: 250px; } }
+
+.source-image {
+  max-width: 100%;
+  height: 250px; }
+
+.popup {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  color: white;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (max-width: 720px) {
+    .popup {
+      background: none;
+      position: relative;
+      display: block;
+      height: 200px;
+      color: black; } }
+
+li:hover .popup {
+  height: 50%; }
+  @media (max-width: 720px) {
+    li:hover .popup {
+      height: 70%; } }
+
+.popup img, .popup p {
+  display: inline-block;
+  padding: 10px; }
+
+.popup img {
+  padding: 0;
+  padding-left: 30px; }
+
+.popup p {
+  padding: 0 0 0 10px; }
+
+footer p {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 300px;
+  display: block; }
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn); } }
